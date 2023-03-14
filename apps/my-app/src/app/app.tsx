@@ -1,16 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { getFakeJSON } from '@nx-charlotte/api';
+import { useQuery } from '@tanstack/react-query';
 
 export function App() {
-  return (
-    <>
-      <NxWelcome title="my-app" />
+  const query = useQuery({ queryKey: ['todos'], queryFn: getFakeJSON });
 
-      <div />
-    </>
-  );
+  return <div>{JSON.stringify(query.data)}</div>;
 }
 
 export default App;

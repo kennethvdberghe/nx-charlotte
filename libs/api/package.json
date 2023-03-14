@@ -1,0 +1,8 @@
+{
+  "name": "@nx-charlotte/api",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "dependencies": {
+    "@nx-charlotte/http": "*"
+  }
+}
