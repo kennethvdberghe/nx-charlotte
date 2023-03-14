@@ -5,3 +5,7 @@ export const getFakeJSON = () => {
     res.json()
   );
 };
+
+export const helloWorld = () => {
+  return 'Hello World';
+};
