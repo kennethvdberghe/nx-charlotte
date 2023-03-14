@@ -7,6 +7,7 @@ export function App() {
 
   return (
     <div>
+      <h1>Hello World!</h1>
       <p>{JSON.stringify(query.data)}</p>
       <p>{JSON.stringify(jokeQuery.data?.value)}</p>
     </div>
